@@ -4,6 +4,10 @@ All notable changes to this project are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## 0.1.2 (2026-09-13)
+
+- Documentation only, no code change. The READMEs gain a CI badge, the release section records that publishing goes through npm trusted publishing (OIDC) with no stored token, and the duplicated publishing heading is merged into one section.
+
 ## 0.1.1 (2026-09-13)
 
 - Documentation only, no code change. The "host switch" limitation now records what a restarted dsh-tui session measured: the Windows launcher starts the host without a console of its own, so every `chcp.com` child gets a fresh console, the host half logs its warning, and the `BASH_ENV` hook carries the whole fix. The warning is expected on every start, not a fault.

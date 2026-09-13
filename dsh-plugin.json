@@ -3,7 +3,7 @@
   "manifestVersion": "0.15",
   "id": "com.dsh-tui-ecosystem.dsh-console-utf8",
   "name": "dsh-console-utf8",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "facets": {
     "host": {
       "entry": "lib/index.js",
