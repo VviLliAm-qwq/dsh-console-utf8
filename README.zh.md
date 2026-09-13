@@ -81,6 +81,10 @@ npm run pack:verify     # 发布文件清单，以及「有没有模块漏进清
 
 版本由 tag 驱动（`vX.Y.Z`，tag 必须等于 `package.json` 的 version）。仓库自带 GitHub Actions 工作流：先跑完整校验链，再带 provenance 发布到 npm。
 
+## 发布
+
+- **仓库**：<https://github.com/VviLliAm-qwq/dsh-console-utf8>（公开）
+
 ## 许可
 
 MIT，见 [LICENSE](LICENSE)。

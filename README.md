@@ -81,6 +81,10 @@ The unit tests never touch the real console or the user's files: the code-page c
 
 Version tags drive the release (`vX.Y.Z`, tag = `package.json` version). The repository ships a GitHub Actions workflow that runs the verification chain and publishes to npm with provenance.
 
+## Publishing
+
+- **Repository**: <https://github.com/VviLliAm-qwq/dsh-console-utf8> (public)
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
