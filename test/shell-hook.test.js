@@ -20,8 +20,8 @@ test('shimScript carries the configured code page', () => {
 
 test('toPosixPath converts drive-letter paths for MSYS bash', () => {
   assert.equal(
-    toPosixPath('C:\\Users\\woshi\\.dsh-tui\\console-utf8.sh'),
-    '/c/Users/woshi/.dsh-tui/console-utf8.sh',
+    toPosixPath('C:\\Users\\alice\\.dsh-tui\\console-utf8.sh'),
+    '/c/Users/alice/.dsh-tui/console-utf8.sh',
   )
   assert.equal(toPosixPath('D:/data/shim.sh'), '/d/data/shim.sh')
   assert.equal(toPosixPath('C:'), '/c')
