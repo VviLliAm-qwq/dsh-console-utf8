@@ -1,0 +1,9 @@
+# dsh-console-utf8 bundle patch: mounts the console-code-page plugin.
+#
+# Nothing else is overridden here on purpose. The plugin only touches the
+# console code page and one environment variable; the shell stack itself is
+# left to whoever provides it (the official bash rows, enabled for Windows by
+# a separate PATH-side plugin). Revert by removing this bundle.
+- insert:
+    - id: dsh-console-utf8
+      name: 'dsh-console-utf8'

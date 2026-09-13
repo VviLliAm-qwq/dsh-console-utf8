@@ -1,0 +1,61 @@
+{
+  "name": "dsh-console-utf8",
+  "version": "0.1.1",
+  "description": "Keep the Windows console on code page 65001 (UTF-8) for the dsh host and its bash tool commands, so output from Windows-native child processes stops being decoded as mojibake",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VviLliAm-qwq/dsh-console-utf8.git"
+  },
+  "author": "VviLliAm-qwq",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-tui",
+    "deepseek-harness",
+    "encoding",
+    "utf-8",
+    "codepage",
+    "chcp",
+    "windows",
+    "bash",
+    "mojibake"
+  ],
+  "files": [
+    "lib",
+    "dsh-plugin.json",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": "^22.19 || >=24"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check:encoding": "node scripts/check-encoding.mjs",
+    "validate:manifest": "node scripts/validate-manifest.mjs",
+    "pack:verify": "node scripts/pack-verify.mjs",
+    "verify": "npm run check:encoding && npm test && npm run validate:manifest && npm run pack:verify",
+    "prepublishOnly": "npm run verify"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://dsh.community/schemas/dsh-plugin-0.15.json",
+  "manifestVersion": "0.15",
+  "id": "com.dsh-tui-ecosystem.dsh-console-utf8",
+  "name": "dsh-console-utf8",
+  "version": "0.1.1",
+  "facets": {
+    "host": {
+      "entry": "lib/index.js",
+      "apiVersion": "v1alpha1"
+    }
+  },
+  "requires": {
+    "contracts": []
+  },
+  "permissions": [],
+  "subscriptions": [],
+  "contributes": {
+    "commands": []
+  },
+  "source": {
+    "repository": "https://github.com/VviLliAm-qwq/dsh-console-utf8"
+  },
+  "compat": {
+    "hosts": [
+      "dsh-tui"
+    ]
+  },
+  "license": "MIT"
+}
