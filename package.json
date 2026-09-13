@@ -2,6 +2,7 @@
   "name": "dsh-console-utf8",
   "version": "0.1.1",
   "description": "Keep the Windows console on code page 65001 (UTF-8) for the dsh host and its bash tool commands, so output from Windows-native child processes stops being decoded as mojibake",
+  "packageManager": "pnpm@11.22.0",
   "license": "MIT",
   "type": "module",
   "main": "lib/index.js",
