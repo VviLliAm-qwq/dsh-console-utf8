@@ -1,0 +1,5 @@
+# Normalize line endings: the package ships JavaScript, JSON and YAML that
+# other tools parse, and a generated `sh` hook that bash sources — a stray CR
+# in that hook is a syntax error, not a cosmetic problem. The repository keeps
+# LF everywhere.
+* text=auto eol=lf
