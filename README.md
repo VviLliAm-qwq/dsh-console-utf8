@@ -1,5 +1,7 @@
 # dsh-console-utf8
 
+[![ci](https://github.com/VviLliAm-qwq/dsh-console-utf8/actions/workflows/ci.yml/badge.svg)](https://github.com/VviLliAm-qwq/dsh-console-utf8/actions/workflows/ci.yml)
+
 **English** · [中文](README.zh.md)
 
 Keeps the Windows console on code page **65001 (UTF-8)** for the dsh host and for the commands the bash tool runs, so output from Windows-native child processes stops arriving as mojibake.
@@ -79,11 +81,8 @@ The unit tests never touch the real console or the user's files: the code-page c
 
 ## Publishing
 
-Version tags drive the release (`vX.Y.Z`, tag = `package.json` version). The repository ships a GitHub Actions workflow that runs the verification chain and publishes to npm with provenance.
-
-## Publishing
-
 - **Repository**: <https://github.com/VviLliAm-qwq/dsh-console-utf8> (public)
+- **Release**: version tags (`vX.Y.Z`, tag = `package.json` version) drive `.github/workflows/release.yml`, which runs the verification chain and publishes to npm through **trusted publishing (OIDC)** with provenance — no token is stored in the repository.
 
 ## License
 

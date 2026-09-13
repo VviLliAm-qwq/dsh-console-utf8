@@ -1,5 +1,7 @@
 # dsh-console-utf8
 
+[![ci](https://github.com/VviLliAm-qwq/dsh-console-utf8/actions/workflows/ci.yml/badge.svg)](https://github.com/VviLliAm-qwq/dsh-console-utf8/actions/workflows/ci.yml)
+
 [English](README.md) · **中文**
 
 把 **dsh 宿主**和 **bash 工具命令**所用的 Windows 控制台固定在代码页 **65001（UTF-8）**，让 Windows 原生子进程的输出不再变成乱码。
@@ -79,11 +81,8 @@ npm run pack:verify     # 发布文件清单，以及「有没有模块漏进清
 
 ## 发布
 
-版本由 tag 驱动（`vX.Y.Z`，tag 必须等于 `package.json` 的 version）。仓库自带 GitHub Actions 工作流：先跑完整校验链，再带 provenance 发布到 npm。
-
-## 发布
-
 - **仓库**：<https://github.com/VviLliAm-qwq/dsh-console-utf8>（公开）
+- **发布方式**：`vX.Y.Z` tag（tag 必须等于 `package.json` 的 version）驱动 `.github/workflows/release.yml`，先跑完整校验链，再经 npm **可信发布（OIDC）**带 provenance 上传——仓库内不存放任何令牌。
 
 ## 许可
 
